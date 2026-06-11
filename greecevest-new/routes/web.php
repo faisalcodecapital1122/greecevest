@@ -30,6 +30,10 @@ Route::get('/properties', function () {
     return view('pages.properties');
 })->name('properties');
 
+Route::get('/properties/{id}', function ($id) {
+    return view('pages.property-detail', ['routeId' => $id]);
+})->name('properties.show');
+
 Route::get('/professionals', function () {
     return view('pages.professionals');
 })->name('professionals');

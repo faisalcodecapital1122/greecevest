@@ -347,7 +347,7 @@ A rare combination of location, character, and long-term value, this listing is 
               <p className="mt-4 text-sm text-muted-foreground tracking-wide">
                 {property.type} · {property.size} · {property.bedrooms} bed · {property.bathrooms} bath
               </p>
-              <div className="mt-7 flex items-center gap-2">
+              <div className="mt-73 flex items-center gap-2">
                 <button
                   type="button"
                   onClick={handleSave}
