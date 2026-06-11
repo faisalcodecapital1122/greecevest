@@ -331,6 +331,7 @@ ul, ol { list-style: none; }
   display: flex;
   align-items: center;
   overflow: hidden;
+  margin-top: -5rem; /* counteract main padding-top so image extends behind navbar */
 }
 .hero-img {
   position: absolute;
@@ -354,13 +355,13 @@ ul, ol { list-style: none; }
   max-width: 80rem;
   width: 100%;
   margin: 0 auto;
-  padding: 2.5rem 1rem;
+  padding: 7.5rem 1rem 3rem; /* 5rem navbar + 2.5rem breathing room */
 }
 @media (min-width: 640px) {
-  .hero-content { padding: 5rem 1.5rem; }
+  .hero-content { padding: 10rem 1.5rem 5rem; }
 }
 @media (min-width: 1024px) {
-  .hero-content { padding: 6rem 2rem; }
+  .hero-content { padding: 11rem 2rem 6rem; }
 }
 .hero-inner { max-width: 56rem; }
 
@@ -1205,6 +1206,7 @@ ul, ol { list-style: none; }
   height: 40vh;
   display: flex;
   align-items: center;
+  margin-top: -5rem;
 }
 .page-hero-img {
   position: absolute;
@@ -1248,13 +1250,13 @@ ul, ol { list-style: none; }
 
 /* Contact Page Header (no image) */
 .contact-header {
-  padding: 4rem 1rem;
+  padding: 3rem 1rem 3rem;
   background: var(--primary);
   color: var(--primary-foreground);
   text-align: center;
 }
-@media (min-width: 640px) { .contact-header { padding: 5rem 1.5rem; } }
-@media (min-width: 1024px) { .contact-header { padding: 7rem 2rem; } }
+@media (min-width: 640px) { .contact-header { padding: 4rem 1.5rem; } }
+@media (min-width: 1024px) { .contact-header { padding: 5rem 2rem; } }
 .contact-header h1 {
   margin-top: 0.75rem;
   font-size: 1.875rem;

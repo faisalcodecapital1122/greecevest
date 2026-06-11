@@ -11,7 +11,7 @@
         <h1 class="auth-title">Create your account</h1>
         <p class="auth-subtitle">Join GREECEVEST for free — no credit card required</p>
 
-        <form class="auth-form" action="#" method="POST">
+        <form class="auth-form" action="{{ route('register') }}" method="POST">
             @csrf
             <div class="form-group">
                 <label class="form-label" for="name">Full Name</label>

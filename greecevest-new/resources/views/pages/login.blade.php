@@ -11,7 +11,7 @@
         <h1 class="auth-title">Welcome back</h1>
         <p class="auth-subtitle">Log in to your GREECEVEST account</p>
 
-        <form class="auth-form" action="#" method="POST">
+        <form class="auth-form" action="{{ route('login') }}" method="POST">
             @csrf
             <div class="form-group">
                 <label class="form-label" for="email">Email</label>
